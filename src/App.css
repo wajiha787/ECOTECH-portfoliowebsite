@@ -1,0 +1,192 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
+header {
+  background-color: #dbf1db; /* Light green background */
+  padding: 20px;
+  position: relative;
+  border-bottom: 5px solid #5b5858;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.ecologo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Logo Container */
+.logo {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+.logo .ECO {
+  color: darkolivegreen;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .TECH {
+  color: rgb(134, 130, 130);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .FUSION {
+  color: black;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.logo .innovations {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  font-size: 14px;
+  color: darkolivegreen;
+}
+
+/* Navigation Menu */
+.home,
+.solutions,
+.clients,
+.aboutus {
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home {
+  padding-left: 600px;
+}
+
+/* Contact Us Button */
+.contactus {
+  background-color: darkseagreen;
+  color: black;
+  padding: 10px 30px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactus:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* Hero Section */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.frontpage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.5); /* Makes the image translucent */
+}
+
+#home p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.ecologo{
+  height: 80px;
+  width: 80px;
+}
+/*Home*/
+.image-container {
+  position: relative; 
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-align: center;
+  position: absolute;
+  top: 50px; /* Increase this value to push the text down */
+  left: 20px; /* Adjust horizontal position if needed */
+  font-size: 20px;
+  font-weight: bold;
+  color: #fafafa;
+  transform: rotate(180deg);
+  z-index: 10; /* Ensure it appears above the image */
+}
+
+.vertical-text-time {
+  writing-mode: vertical-rl;
+  text-align: center;
+  position: absolute;
+  top: 180px; /* Increase this value to ensure there's enough space below the first text */
+  left: 20px; /* Adjust horizontal position if needed */
+  font-size: 20px;
+  font-weight: bold;
+  color: #fafafa;
+  transform: rotate(180deg);
+  z-index: 10; /* Ensure it appears above the image */
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 100vh; /* Full page height */
+}
+
+.image-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 31px;
+  color: #555; /* Adjust text color */
+  text-align: center; /* Center the text */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+/*Services*/
+
+/* Animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Links */
+.App-link {
+  color: #61dafb;
+}
