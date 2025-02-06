@@ -11,6 +11,8 @@ const Home = () => {
           </div>
           <div className="vertical-text">MON-SAT</div>
           <div className="vertical-text-time">9AM  TO  6PM</div>
+          <div className="translucent-overlay"></div>
+          
         </div>
     );
   };

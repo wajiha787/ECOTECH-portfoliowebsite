@@ -126,7 +126,9 @@ header {
 }
 /*Home*/
 .image-container {
-  position: relative; 
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  z-index: 1;
 }
 
 .vertical-text {
@@ -163,17 +165,52 @@ header {
 
 .image-text {
   position: absolute;
-  top: 35%;
-  left: 50%;
+  top: 30%;
+  left: 40%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7); /* Translucent background */
-  padding: 10px; /* Adjust padding as needed */
-  font-size: 31px;
-  color: #555; /* Adjust text color */
+  background-color: rgba(243, 245, 240, 0.7); /* Translucent background */
+  padding: 20px; /* Adjust padding as needed */
+  font-size: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #262525; /* Adjust text color */
   text-align: center; /* Center the text */
-  border-radius: 5px; /* Optional: rounded corners */
+  border-radius: 15px; /* Optional: rounded corners */
 }
 
+.frontpage {
+  width: 100%;
+  height: auto;
+  animation: zoomIn 5s ease-in-out forwards; /* Adjust duration as needed */
+}
+
+@keyframes zoomIn {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1); /* Slight zoom-in effect */
+  }
+}
+
+.translucent-overlay {
+  position: absolute;
+  top: 0;
+  right: 0; /* Position the overlay on the right */
+  width: 80%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.5); /* Translucent background */
+  clip-path: polygon(100% 0, 100% 100%, 70% 100%, 50% 0); /* Irregular shape */
+  animation: slideIn 3s ease-in-out forwards; /* Adjust duration as needed */
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
 /*Services*/
 
 /* Animations */
