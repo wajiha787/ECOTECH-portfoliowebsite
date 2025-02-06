@@ -15,8 +15,11 @@ header {
   padding: 20px;
   position: relative;
   border-bottom: 5px solid #5b5858;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: flex;
   align-items: center;
+  height:110px;
 }
 
 /* Logo */
@@ -165,7 +168,7 @@ header {
 
 .image-text {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
   background-color: rgba(243, 245, 240, 0.7); /* Translucent background */
@@ -179,8 +182,9 @@ header {
 
 .frontpage {
   width: 100%;
-  height: auto;
-  animation: zoomIn 5s ease-in-out forwards; /* Adjust duration as needed */
+  height: 510px;
+  animation: zoomIn 5s ease-in-out forwards;
+  object-fit: cover;
 }
 
 @keyframes zoomIn {
@@ -197,7 +201,7 @@ header {
   top: 0;
   right: 0; /* Position the overlay on the right */
   width: 80%;
-  height: 80%;
+  height: 100%;
   background: rgba(255, 255, 255, 0.5); /* Translucent background */
   clip-path: polygon(100% 0, 100% 100%, 70% 100%, 50% 0); /* Irregular shape */
   animation: slideIn 3s ease-in-out forwards; /* Adjust duration as needed */
@@ -212,18 +216,77 @@ header {
   }
 }
 /*Services*/
-
-/* Animations */
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container for all cards */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Links */
-.App-link {
-  color: #61dafb;
+/* Card Styles */
+.card {
+  width: 350px;
+  height: 350px;
+  margin-top: 70px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+/* Text Content */
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Default front content */
+.card .front {
+  background-color: darkseagreen;
+  color: #333;
+  font-size:22px ;
+}
+
+/* Hidden back content */
+.card .back {
+  background-color: grey; 
+  color: #fff;
+  font-size: 26px; /* White text */
+  opacity: 0;
+}
+
+/* Hover Effect: Hide front and show back */
+.card:hover .front {
+  opacity: 0;
+}
+
+.card:hover .back {
+  opacity: 1;
+}
+
+/* Hover Effect: Scale the card */
+.card:hover {
+  transform: scale(1.05);
+}
+.service{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: 2px rgb(79, 81, 79) underline;
+}
+

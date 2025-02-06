@@ -4,7 +4,7 @@ import imglogo from '../images/ecologo.png'
 function Header() {
   return (
     <header>
-      <img className="ecologo" src={imglogo} alt="ECO Tech Fusion Logo" />; 
+      <img className="ecologo" src={imglogo} alt="ECO Tech Fusion Logo" />
       <div className="logo">
         <span className="ECO">ECO</span>
         <span className="TECH">TECH</span>
