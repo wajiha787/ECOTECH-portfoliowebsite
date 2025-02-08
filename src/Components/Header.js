@@ -1,6 +1,7 @@
 import React from 'react';
-import '../App.css';  
+import '../styles/Header.css'; 
 import imglogo from '../images/ecologo.png'
+
 function Header() {
   return (
     <header>

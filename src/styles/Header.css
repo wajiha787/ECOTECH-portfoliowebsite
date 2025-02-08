@@ -1,0 +1,118 @@
+
+header {
+    background-color: #eaf2ea; /* Light green background */
+    padding: 20px;
+    position: relative;
+    border-bottom: 5px solid #5b5858;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    height:110px;
+  }
+  
+  /* Logo */
+  .ecologo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Logo Container */
+  .logo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+  }
+  
+  .logo .ECO {
+    color: darkolivegreen;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo .TECH {
+    color: rgb(134, 130, 130);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo .FUSION {
+    color: black;
+    font-size: 24px;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  
+  .logo .innovations {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: 14px;
+    color: darkolivegreen;
+  }
+  
+  /* Navigation Menu */
+  .home,
+  .solutions,
+  .clients,
+  .aboutus {
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .home {
+    padding-left: 600px;
+  }
+  
+  /* Contact Us Button */
+  .contactus {
+    background-color: darkseagreen;
+    color: black;
+    padding: 10px 30px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contactus:hover {
+    background-color: grey;
+    color: white;
+  }
+  
+  /* Hero Section */
+  #home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .frontpage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5); /* Makes the image translucent */
+  }
+  
+  #home p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  .ecologo{
+    height: 80px;
+    width: 80px;
+  }

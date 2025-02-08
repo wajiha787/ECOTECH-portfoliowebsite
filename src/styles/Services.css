@@ -1,0 +1,97 @@
+/* Services Section */
+.services-container {
+  display: flex; /* Change from grid to flexbox */
+  justify-content: center; /* Center the cards */
+  gap: 25px;
+  padding: 40px 10%;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+/* Card Styles */
+.card {
+  width: 280px;
+  height: 300px;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  border-radius: 15px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+/* Flip Effect */
+.card:hover {
+  transform: scale(1.07) rotateY(10deg);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Card Front & Back */
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Front Side */
+.card .front {
+  background: linear-gradient(120deg, #515a55, #2b302c);
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+/* Back Side */
+.card .back {
+  background: linear-gradient(120deg, #67686b, #252627);
+  color: #f8f8f8;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0;
+}
+
+/* Flip Effect */
+.card:hover .front {
+  opacity: 0;
+}
+
+.card:hover .back {
+  opacity: 1;
+}
+
+/* Section Title */
+.service {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #333;
+  text-decoration: 3px solid #192823 underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 20px;
+  }
+
+  .card {
+      width: 100%;
+      height: auto;
+  }
+
+  .service {
+      font-size: 26px;
+  }
+}

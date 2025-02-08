@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; 
+import '../styles/Services.css';
 
 function Services() {
   return (
@@ -31,6 +31,15 @@ function Services() {
         </div>
         <div className="card-content back">
           <p>Streamline repetitive tasks and workflows to enhance productivity and reduce errors</p>
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-content front">
+          <h3>Virtualization</h3>
+
+        </div>
+        <div className="card-content back">
+          <p>Setting up virtual machines and environments to optimize hardware usage</p>
         </div>
       </div>
     </div></>
