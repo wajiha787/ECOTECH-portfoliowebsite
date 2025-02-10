@@ -5,8 +5,10 @@
   justify-content: center;
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #f4f4f4, #e0e0e0); /* Soft gradient for depth */
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef); 
   padding: 20px;
+  flex-direction: column;
+  gap: 50px;
 }
 
 /* Image Container */
@@ -17,34 +19,32 @@
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  
-  /* ADD THIS TO ENSURE TEXT CENTERS */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
 /* Background Image */
 .frontpage {
   width: 100%;
-  height: 520px;
+  height: 550px;
   object-fit: cover;
   border-radius: 20px;
-  filter: brightness(0.9); /* Slight dimming for text readability */
+  filter: brightness(0.8); /* Slight dimming for contrast */
   transition: transform 5s ease-in-out;
 }
 
-/* Zoom-In Effect */
+/* Zoom-In Hover Effect */
 .frontpage:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 /* Overlay Effect */
-.translucent-overlay {
+.overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* Darker overlay for contrast */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  backdrop-filter: blur(3px);
 }
 
 /* Centered Text */
@@ -53,22 +53,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.85);
-  padding: 25px 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 30px 50px;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
-  color: #333;
+  color: #fff;
   text-align: center;
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   max-width: 80%;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.5;
-  
-  /* ENSURE TEXT IS CENTERED */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 /* Vertical Text Styling */
@@ -76,33 +77,25 @@
 .vertical-text-time {
   writing-mode: vertical-rl;
   position: absolute;
-  left: 25px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #f8f8f8;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  opacity: 0.8;
+  left: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
   transform: rotate(180deg);
 }
 
 /* Position Adjustments */
 .vertical-text {
-  top: 60px;
+  top: 50px;
 }
 
 .vertical-text-time {
-  top: 190px;
+  top: 180px;
 }
 
-/* Smooth Text Animation */
-.image-text,
-.vertical-text,
-.vertical-text-time {
-  opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-/* Fade-In Effect */
+/* Fade-In Animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -114,34 +107,30 @@
   }
 }
 
-/* Overlay Slide-In Effect */
-@keyframes slideOverlay {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.translucent-overlay {
-  animation: slideOverlay 1.5s ease-in-out;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .image-text {
-    font-size: 1.3rem;
-    padding: 15px 25px;
+    font-size: 1.4rem;
+    padding: 20px 30px;
   }
 
   .vertical-text,
   .vertical-text-time {
-    font-size: 1rem;
+    font-size: 1.2rem;
     left: 15px;
   }
 
   .frontpage {
-    height: 400px;
+    height: 450px;
   }
 }
+.home-sections {
+  width: 100%;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Adds space between Services & WhyChooseUs */
+}
+
+

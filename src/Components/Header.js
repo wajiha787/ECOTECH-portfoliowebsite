@@ -1,8 +1,13 @@
-import React from 'react';
-import '../styles/Header.css'; 
-import imglogo from '../images/ecologo.png'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/Header.css";
+import imglogo from "../images/ecologo.png";
+import Contactus from "./Contactus.js";
+
 
 function Header() {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <header>
       <img className="ecologo" src={imglogo} alt="ECO Tech Fusion Logo" />
@@ -12,12 +17,31 @@ function Header() {
         <span className="FUSION">FUSION</span>
         <span className="innovations">Serving Innovations</span>
       </div>
-      <nav> 
-        <span className="home">Home</span>
-        <span className="solutions">Solution</span>
-        <span className="clients">Clients</span>
-        <span className="aboutus">About Us</span>
-        <button className="contactus">Contact Us</button>
+      <nav>
+        <Link to="/" className="nav-link">Home</Link>
+
+        {/* Dropdown for Solutions */}
+        <div 
+          className="solutions-container" 
+          onMouseEnter={() => setShowDropdown(true)} 
+          onMouseLeave={() => setShowDropdown(false)}
+        >
+          <span className="solutions">Solutions ▾</span>
+          {showDropdown && (
+            <div className="dropdown">
+              <Link to="/data-wired-wireless" className="dropdown-item">Data Wired & Wireless</Link>
+              <Link to="/structured-cabling" className="dropdown-item">Structured Cabling</Link>
+              <Link to="/data-center-solution" className="dropdown-item">Data Center Solution</Link>
+              <Link to="/ict-elv-solutions" className="dropdown-item">ICT & ELV Solutions</Link>
+              <Link to="/unified-voice-solution" className="dropdown-item">Unified Voice Solution</Link>
+            </div>
+          )}
+        </div>
+
+        <Link to="/clients" className="nav-link" >Clients</Link>
+        <Link to="/aboutus" className="nav-link">About Us</Link>
+        
+        <button className="contactus" onClick={Contactus}>Contact Us</button>
       </nav>
     </header>
   );

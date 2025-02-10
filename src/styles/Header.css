@@ -1,22 +1,23 @@
 
 header {
-    background-color: #eaf2ea; /* Light green background */
-    padding: 20px;
-    position: relative;
-    border-bottom: 5px solid #5b5858;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: flex;
-    align-items: center;
-    height:110px;
-  }
+  background-color: #eaf2ea; /* Light green background */
+  padding: 20px;
+  position: relative;
+  border-bottom: 5px solid #5b5858;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;  /* ✅ Ensures elements align properly */
+  align-items: center;
+  justify-content: space-between; /* ✅ Keeps items spaced properly */
+  height: 120px;  /* Increased height */
+}
   
   /* Logo */
   .ecologo {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: 0;
+    top: 15%;
     left: 0;
   }
   
@@ -24,10 +25,11 @@ header {
   .logo {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 20px;
-    left: 120px;
-  }
+    align-items: center; /* ✅ Keeps text aligned properly */
+    position: relative; /* ✅ Prevents unnecessary absolute positioning */
+    top: 2%; 
+    left: 5%;
+}
   
   .logo .ECO {
     color: darkolivegreen;
@@ -64,6 +66,7 @@ header {
     padding-left: 40px;
     font-size: 20px;
     font-weight: bold;
+    display: flex;
   }
   
   .home {
@@ -112,7 +115,61 @@ header {
     color: white;
     text-align: center;
   }
-  .ecologo{
-    height: 80px;
-    width: 80px;
-  }
+  /* Dropdown Styling */
+.solutions-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.dropdown span {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown span:hover {
+  background-color: #0e2f15;
+}
+.dropdown .dropdown-item {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Navigation Links */
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #35463f;
+}
