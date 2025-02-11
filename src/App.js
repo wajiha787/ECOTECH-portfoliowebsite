@@ -10,10 +10,9 @@ import DataCenterSolution from "./pages/DataCenterSolution";
 import ICTELVSolutions from "./pages/ICTELVSolutions";
 import UnifiedVoiceSolution from "./pages/UnifiedVoiceSolution";
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/ECOTECH-portfoliowebsite">  {/* 👈 Added basename for GitHub Pages */}
       {/* WhatsApp Floating Button */}
       <div className="fixed-bottom-left">
         <a href="https://wa.me/923362220034?" target="_blank" rel="noopener noreferrer">
@@ -23,9 +22,7 @@ function App() {
       
       <div className="app-container">
         {/* Fixed Header */}
-        
         <Header />
-       
 
         {/* Page Routing */}
         <Routes>
@@ -37,7 +34,6 @@ function App() {
           <Route path="/ict-elv-solutions" element={<ICTELVSolutions />} />
           <Route path="/unified-voice-solution" element={<UnifiedVoiceSolution />} />
         </Routes>
-
       </div> 
       
     </Router>

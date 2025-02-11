@@ -1,177 +1,150 @@
-.responsive-map{
-overflow:hidden;
-height:0;
-padding-bottom: 30%;
-position: relative;
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
 }
 
-.responsive-map iframe{
-    border: 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-}
-.contact-container {
-    background-color: #c7dec3;
-    padding: 40px;
-    text-align: left;
-    border-top:2px solid #333;
-  }
-  
-  .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .contact-info {
-    width: 50%;
-  }
-  
-  .contact-title {
-    color: #042e10;
-    font-size: 24px;
-  }
-  
-  .contact-heading {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .contact-description {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .contact-details p {
-    margin: 5px 0;
-  }
-  
-  .icon {
-    margin-right: 8px;
-  }
-  
-  .contact-form {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-field, .textarea-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .textarea-field {
-    height: 100px;
-  }
-  
-  .submit-button {
-    background-color: #7c8d6d;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: grey;
-  }
-  
-  .map-container {
-    margin-top: 20px;
-  }
-  .faq-container {
-    background-color: #eaf5e3; /* Light green background */
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Spacing before contact section */
+/* Header text directly on background */
+.header-content {
+  margin-top: 50px; /* Reduced from 150px */
 }
 
-.faq-title {
-    color: #042e10;
-    font-size: 24px;
-    font-weight: bold;
+.contact-heading {
+  font-size: 44px;
+  font-weight: bolder;
+  color: rgb(51, 51, 51);
 }
 
-.faq-heading {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #2a4d14;
+
+.contact-description {
+  font-size: 22px;
+  max-width: 700px;
+  margin: 10px auto;
+  color: black;
 }
 
-.faq-description {
-    font-size: 16px;
-    margin-bottom: 20px;
-    color: #555;
-}
+/* Contact Form */
+.contact-form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+ 
+  max-width: none;
+  width: 80%;
+  border: 2px rgb(115, 134, 134);
+  color: #333;
+  position: relative; /* Add this */
+  z-index: 1; /* Add this */
+  margin: 20px auto; /* Ensures even spacing on all sides */
 
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
-.faq-item {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 10px 0;
+  .contact-container {
+    background-color: #d7d5d5; /* Plain white background */
     width: 80%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    padding: 30px; /* Add spacing inside */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean look */
+    max-width: none; /* Restrict max width for better layout */
+    margin: 20px auto; /* Center the div */
+    border: 1px solid #ddd; 
+    filter: drop-shadow(0px 0px 12px grey);/* Light border */
+    display: flex; 
+    justify-content: center; /* Centers the inner content horizontally */
+    align-items: center; /* Centers the inner content vertically */
+    flex-direction: column;
+  }
+  
+
+.contact-form .input-field, 
+.contact-form .dropdown-field, 
+.contact-form .textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.label{
+  font-size: 36px;
 }
 
-.faq-item:hover {
-    transform: scale(1.02);
+.contact-form .submit-button {
+  background: #275f4d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 25px;
+}
+.form-label {
+  font-weight:lighter;
+  display: block;
+  margin-top: 20px;
+  color: #333;
 }
 
-.faq-icon {
-    font-size: 20px;
+.form-contact{
+  font-size: 26px;
+}
+.contact-form .submit-button:hover {
+  background: #b6b7b8;
 }
 
-.faq-button {
-    background: none;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #2a4d14;
-    text-align: left;
-    flex-grow: 1;
+
+
+.map-container {
+  width: 100%;
+  margin: auto;
+  border-radius: none;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
-.faq-answer {
-    display: none; /* Initially hidden */
-    font-size: 16px;
-    margin-top: 10px;
-    color: #333;
+.responsive-map iframe {
+  width: 100%;  /* Ensures the iframe stretches fully */
+  height: 400px;
+  border: none;
+  border-radius: 10px; /* Remove rounded corners for a full-width effect */
+}
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
 }
 
-/* Responsive Styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1; /* Makes all cards equal width */
+  min-width: 150px; /* Ensures cards don’t get too small */
+  border: 1px solid #ddd;
+}
+
 @media (max-width: 768px) {
-    .faq-item {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .faq-button {
-        font-size: 16px;
-    }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.card p{
+  margin-top: 25px;
+}
+.mail-logo{
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
 }

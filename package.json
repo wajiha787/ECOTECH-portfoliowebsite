@@ -44,13 +44,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wajiha787/echotech.git"
+    "url": "git+https://github.com/wajiha787/ECOTECH-portfoliowebsite.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wajiha787/echotech/issues"
+    "url": "https://github.com/wajiha787/ECOTECH-portfoliowebsite/issues"
   },
-  "homepage": "https://github.com/wajiha787/echotech#readme"
+  "homepage": "https://wajiha787.github.io/ECOTECH-portfoliowebsite"
+
 }
