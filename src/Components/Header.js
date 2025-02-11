@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
 import imglogo from "../images/ecologo.png";
-import Contactus from "./Contactus.js";
-
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -41,7 +39,8 @@ function Header() {
         <Link to="/clients" className="nav-link" >Clients</Link>
         <Link to="/aboutus" className="nav-link">About Us</Link>
         
-        <button className="contactus" onClick={Contactus}>Contact Us</button>
+        {/* ✅ Fixed Contact Us Button */}
+        <Link to="/contactus" className="contactus">Contact Us</Link>
       </nav>
     </header>
   );

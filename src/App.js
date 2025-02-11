@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Components/Header';
 import Home from './Components/Home';
+import Contactus from "./Components/Contactus";
 import whatsapp from './images/whatsapplogo.png';
 import DataWiredWireless from "./pages/DataWiredWireless";
 import StructuredCabling from "./pages/StructuredCabling";
@@ -29,6 +30,7 @@ function App() {
         {/* Page Routing */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contactus" element={<Contactus />} />
           <Route path="/data-wired-wireless" element={<DataWiredWireless />} />
           <Route path="/structured-cabling" element={<StructuredCabling />} />
           <Route path="/data-center-solution" element={<DataCenterSolution />} />
