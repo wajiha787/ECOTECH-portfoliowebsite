@@ -1,15 +1,28 @@
-import React from "react";
-import imgfrontpage from '../images/frontpage.jpg';
+import React, { useState, useEffect } from "react";
+import coverPic1 from '../images/cover-page1.jpg';
+import coverPic2 from '../images/cover-page2.jpg';
+import coverPic3 from '../images/cover-page3.jpg';
 import '../styles/Home.css';
 import Services from "./Services";
 import WhyChooseUs from "./WhyChooseUs";
 
+const images = [coverPic1, coverPic2, coverPic3];
+
 const Home = () => {
+    const [currentImage, setCurrentImage] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImage((prev) => (prev + 1) % images.length);
+        }, 3000); 
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="home-container">
             <div className="image-container">
-                <img className="frontpage" src={imgfrontpage} alt="ECO Tech front page" />
-                <div className="overlay"></div>
+                <img className="frontpage" src={images[currentImage]} alt="ECO Tech front page" />
                 
                 {/* Main Text Centered */}
                 <div className="image-text">
@@ -23,7 +36,7 @@ const Home = () => {
                 <div className="vertical-text-time">9AM TO 6PM</div>
             </div>
 
-            {/* Wrap Services and WhyChooseUs in a separate div to avoid styling issues */}
+            {/* Wrap Services and WhyChooseUs in a separate div */}
             <div className="home-sections">
                 <Services />
                 <WhyChooseUs />
@@ -31,5 +44,4 @@ const Home = () => {
         </div>
     );
 };
-
 export default Home;

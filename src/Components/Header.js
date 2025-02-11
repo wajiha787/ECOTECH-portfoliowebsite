@@ -7,7 +7,7 @@ function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <header>
+    <header className="sticky-header">
       <img className="ecologo" src={imglogo} alt="ECO Tech Fusion Logo" />
       <div className="logo">
         <span className="ECO">ECO</span>
