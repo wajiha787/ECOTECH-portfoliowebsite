@@ -80,11 +80,11 @@
 }
 
 .vertical-text {
-  top: 50px;
+  top: 80px;
 }
 
 .vertical-text-time {
-  top: 180px;
+  top: 200px;
 }
 
 @media (max-width: 768px) {

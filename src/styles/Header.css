@@ -1,11 +1,9 @@
 
 header {
-  background-color: #eaf2ea; /* Light green background */
+  background-color: rgba(239, 245, 239, 0.5); /* Light green background */
   padding: 20px;
   position: relative;
   border-top: 5px solid #5b5858;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   display: flex;  /* ✅ Ensures elements align properly */
   align-items: center;
   justify-content: space-between; /* ✅ Keeps items spaced properly */
