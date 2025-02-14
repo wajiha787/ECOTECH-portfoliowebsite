@@ -4,7 +4,11 @@ import coverPic2 from '../images/cover-page2.jpg';
 import coverPic3 from '../images/cover-page3.jpg';
 import '../styles/Home.css';
 import Services from "./Services";
+import ClientsHome from "./ClientsHome";
 import WhyChooseUs from "./WhyChooseUs";
+import ServicesSection from "./ServicesSection";
+import Counter from "./Counter";
+import Footer from "./Footer";
 
 const images = [coverPic1, coverPic2, coverPic3];
 
@@ -34,14 +38,22 @@ const Home = () => {
                 {/* Vertical Text for Timings */}
                 <div className="vertical-text">MON-SAT</div>
                 <div className="vertical-text-time">9AM TO 6PM</div>
+
+            
             </div>
 
             {/* Wrap Services and WhyChooseUs in a separate div */}
             <div className="home-sections">
+                <ServicesSection/>
                 <Services />
-                <WhyChooseUs />
+                
             </div>
+            <WhyChooseUs />
+            <Counter/>
+            <ClientsHome/>
+            <Footer/>
         </div>
     );
 };
+
 export default Home;

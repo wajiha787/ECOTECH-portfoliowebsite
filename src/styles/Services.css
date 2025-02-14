@@ -2,7 +2,7 @@
 .services-container {
   display: flex; /* Change from grid to flexbox */
   justify-content: center; /* Center the cards */
-  gap: 25px;
+  gap: 35px;
   padding: 40px 10%;
   flex-wrap: nowrap; /* Prevent wrapping */
   overflow-x: auto; /* Add horizontal scroll if needed */
@@ -10,8 +10,8 @@
 
 /* Card Styles */
 .card {
-  width: 280px;
-  height: 300px;
+  width: 300px;
+  height: 300px; 
   background: linear-gradient(135deg, #ffffff, #f8f8f8);
   border-radius: none;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.12);
@@ -20,6 +20,12 @@
   transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
   perspective: 1000px;
+}
+.card-1{
+  transform: translateY(-20px);
+}
+.card-2{
+  transform: translateY(20px);
 }
 
 /* Flip Effect */
@@ -45,7 +51,7 @@
 
 /* Front Side */
 .card .front {
-  background: linear-gradient(120deg, #dbf460, #7b95c9);
+  background: linear-gradient(120deg, #d7ed6c, #7b95c9);
   color: rgb(255, 255, 255);
   font-size: 22px;
   font-weight: bold;
@@ -72,12 +78,23 @@
 
 /* Section Title */
 .service {
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 32px;
   text-align: center;
-  color: #333;
-  text-decoration: 3px solid #192823 underline;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #2d3436;
+  font-weight: 650;
+}
+
+.service::after{
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0984e3;
 }
 
 /* Responsive Design */

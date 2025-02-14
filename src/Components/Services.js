@@ -3,7 +3,7 @@ import '../styles/Services.css';
 
 function Services() {
   return (
-    <><p className='service'>Services For Our Clients</p><div className="services-container">
+    <><p className='service text-white'>Services For Our Clients</p><div className="services-container">
       <div className="card">
         <div className="card-content front">
           <h3>Support and Maintenance</h3>

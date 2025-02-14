@@ -1,0 +1,42 @@
+.clients-container {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(231, 245, 176, 0.7);
+    border-top: 5px solid grey;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+    
+    
+  }
+  
+  .clients-strip {
+    display: flex;
+    gap: 20px; /* Space between images */
+    animation: scroll 15s linear infinite; /* Continuous animation */
+  }
+  
+  .client-image {
+    width: 100px; /* Set all images to the same size */
+    height: 80px; /* Uniform height */
+    object-fit: cover; /* Ensures all images fit properly */
+    border-radius: 8px; /* Optional rounded corners */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .clients-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  

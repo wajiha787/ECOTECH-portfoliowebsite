@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Contactus from "./Components/Contactus";
+import Clients from './Components/Clients';
+import Aboutus from './Components/Aboutus';
+import Footer from './Components/Footer';
 import whatsapp from './images/whatsapplogo.png';
 import DataWiredWireless from "./pages/DataWiredWireless";
 import StructuredCabling from "./pages/StructuredCabling";
 import DataCenterSolution from "./pages/DataCenterSolution";
 import ICTELVSolutions from "./pages/ICTELVSolutions";
-import UnifiedVoiceSolution from "./pages/UnifiedVoiceSolution";
+import UnifiedVoiceSolution from "./pages/UnifiedVoiceSolution"; 
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactus" element={<Contactus />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/footer" element={<Footer />} />
           <Route path="/data-wired-wireless" element={<DataWiredWireless />} />
           <Route path="/structured-cabling" element={<StructuredCabling />} />
           <Route path="/data-center-solution" element={<DataCenterSolution />} />

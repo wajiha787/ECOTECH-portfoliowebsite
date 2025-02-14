@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../styles/TabNavigation.css";
+import "../styles/Aboutus.css";
 
-const MissionVision = () => {
+const Aboutus = () => {
   const [selectedTab, setSelectedTab] = useState("mission");
 
   return (
@@ -21,4 +21,4 @@ const MissionVision = () => {
   );
 };
 
-export default MissionVision;
+export default Aboutus;

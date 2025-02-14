@@ -7,7 +7,7 @@ header {
   display: flex;  /* ✅ Ensures elements align properly */
   align-items: center;
   justify-content: space-between; /* ✅ Keeps items spaced properly */
-  height: 120px;  /* Increased height */
+  height: 220px;  /* Increased height */
 }
   
   /* Logo */
