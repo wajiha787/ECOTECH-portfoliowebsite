@@ -37,7 +37,7 @@ function Header() {
         </div>
 
         <Link to="/clients" className="nav-link" >Clients</Link>
-        <Link to="/aboutus" className="nav-link">About Us</Link>
+        <Link to="/aboutus" className="aboutus">About Us</Link>
         
         {/* ✅ Fixed Contact Us Button */}
         <Link to="/contactus" className="contactus">Contact Us</Link>

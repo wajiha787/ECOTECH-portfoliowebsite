@@ -6,7 +6,7 @@ function WhyChooseUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-16">
       <section className="why-choose-us-section">
-        <h2 className="section-title text-white">Why Choose Us</h2>
+        <h2 className="main-title">Why Choose Us</h2>
         
         <div className="content-container">
           {/* Benefits Card */}

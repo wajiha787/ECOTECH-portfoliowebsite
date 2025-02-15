@@ -1,53 +1,76 @@
 .clients-container1 {
-    text-align: center;
-    padding: 20px;
-    margin-top: 80px;
-    background-color: none;
-  }
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+  background-color: transparent; /* Fixed */
+}
+
+.clients-container1 h1 {
+  font-weight: bold;
+  background: white;
+  font-size: 40px;
+  color: #1f2937;
+  text-align: center;
+  position: relative;
+}
+
+.clients-container1 h1::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0984e3;
+}
+
+.clients-container1 h2 {
+  font-size: 22px;
+  margin-top: 40px;
+  background: white;
+  margin-bottom: 60px;
+}
+
+.clients-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive Grid */
+  gap: 40px;
+  background: rgba(231, 245, 176, 0.7);
+  border-top: 5px solid grey;
+  border-bottom: 5px solid grey;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Prevents elements touching edges */
+}
+
+/* Ensures images are responsive */
+.client-image1 {
+  width: 100%;
+  max-width: 200px; /* Keeps a uniform size */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .clients-container1 h1 {
-    
-    font-weight: bold;
-    background: white;
-    font-size: 40px;
-    color: rgb(88, 87, 87);
-    text-align: center;
-    position: relative; /* Required for ::after to position correctly */
+      font-size: 32px;
   }
-  
-  .clients-container1 h1::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: #0984e3;
-  }
+
   .clients-container1 h2 {
-    font-size: 22px;
-    margin-top: 40px;
-    background: white;
-    margin-bottom: 60px;
+      font-size: 18px;
+      margin-bottom: 40px;
   }
-  
+
   .clients-grid1 {
-    display: grid;
-    width:100vw;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    background: rgba(231, 245, 176, 0.7);
-    border-top: 5px solid grey;
-    border-bottom: 5px solid grey;
-    justify-content: center;
-    align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts grid */
+      gap: 20px;
   }
-  
+
   .client-image1 {
-    width: 100%;
-    max-width: 200px; /* Adjust size as needed */
-    height: 200px; /* Ensures uniform height */
-    object-fit: cover; /* Maintains aspect ratio while filling the space */
-    border-radius: 8px; /* Optional: Adds rounded corners */
+      max-width: 150px;
+      height: 150px;
   }
-  
+}

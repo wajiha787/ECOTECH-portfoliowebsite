@@ -20,7 +20,7 @@ export default function Counter() {
     increment(setProjects, 205);
     increment(setClients, 80);
     increment(setCoffee, 626);
-    increment(setHappyClients, 185);
+    increment(setHappyClients, 185); 
   }, []);
 
   return (
