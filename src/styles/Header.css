@@ -6,7 +6,7 @@ header {
   display: flex;  /* ✅ Ensures elements align properly */
   align-items: center;
   justify-content: space-between; /* ✅ Keeps items spaced properly */
-  height: 220px;  /* Increased height */
+  height: 280px;  /* Increased height */
 }
   
   /* Logo */
@@ -28,7 +28,7 @@ header {
 }
   
   .logo .ECO {
-    color: darkolivegreen;
+    color: rgb(76, 106, 25);
     font-size: 24px;
     font-weight: bold;
   }
@@ -50,7 +50,7 @@ header {
     position: absolute;
     top: 30px;
     left: 0;
-    font-size: 14px;
+    font-size: 18px;
     color: darkolivegreen;
   }
   

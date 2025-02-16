@@ -4,7 +4,7 @@ import '../styles/Services.css';
 function Services() {
   return (
     <><p className='service text-white'>Services For Our Clients</p><div className="services-container">
-      <div className="card">
+      <div className="card2">
         <div className="card-content front">
           <h3>Support and Maintenance</h3>
         </div>
@@ -14,7 +14,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card2">
         <div className="card-content front">
           <h3>Contact Center Consultation</h3>
 
@@ -24,7 +24,7 @@ function Services() {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card2">
         <div className="card-content front">
           <h3>Smart Automation </h3>
 
@@ -33,7 +33,7 @@ function Services() {
           <p>Streamline repetitive tasks and workflows to enhance productivity and reduce errors</p>
         </div>
       </div>
-      <div className="card">
+      <div className="card2">
         <div className="card-content front">
           <h3>Virtualization</h3>
 

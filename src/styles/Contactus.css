@@ -7,16 +7,44 @@
   text-align: center;
   position: relative;
 }
-
+.contact-page h1{
+ color: #000000;
+ font-size: 2rem;
+ margin-top: 50px;
+ margin-bottom: 30px;
+ position: relative;
+}
+.contact-page h1::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0984e3;
+}
 /* Header text directly on background */
 .header-content {
-  margin-top: 50px; /* Reduced from 150px */
+  margin-top: 150px; /* Reduced from 150px */
 }
 
-.contact-heading {
-  font-size: 44px;
+.contact-heading{
+  font-size: 2rem;
   font-weight: bolder;
-  color: rgb(51, 51, 51);
+  color: rgb(0, 0, 0);
+  position: relative;
+  margin-top: 30px;
+}
+.contact-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0984e3;
 }
 
 
@@ -40,57 +68,6 @@
   z-index: 1; /* Add this */
   margin: 20px auto; /* Ensures even spacing on all sides */
 
-}
-  .contact-container {
-    background-color: #d7d5d5; /* Plain white background */
-    width: 80%;
-    padding: 30px; /* Add spacing inside */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean look */
-    max-width: none; /* Restrict max width for better layout */
-    margin: 20px auto; /* Center the div */
-    border: 1px solid #ddd; 
-    filter: drop-shadow(0px 0px 12px grey);/* Light border */
-    display: flex; 
-    justify-content: center; /* Centers the inner content horizontally */
-    align-items: center; /* Centers the inner content vertically */
-    flex-direction: column;
-  }
-  
-
-.contact-form .input-field, 
-.contact-form .dropdown-field, 
-.contact-form .textarea-field {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-.label{
-  font-size: 36px;
-}
-
-.contact-form .submit-button {
-  background: #275f4d;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 25px;
-}
-.form-label {
-  font-weight:lighter;
-  display: block;
-  margin-top: 20px;
-  color: #333;
-}
-
-.form-contact{
-  font-size: 26px;
-}
-.contact-form .submit-button:hover {
-  background: #b6b7b8;
 }
 
 
@@ -118,7 +95,7 @@
   margin-top: 30px;
 }
 
-.card {
+.card1 {
   background-color: white;
   padding: 20px;
   color: black;
@@ -147,4 +124,66 @@
   width: 50px;
   height: 50px;
   margin-top: 50px;
+}
+.outer-contact-container{
+width:70%;
+background: linear-gradient(120deg, #333, rgb(205, 203, 203));
+}
+
+
+.contact-container {
+  background-color: #d7d5d5; /* Plain white background */
+  width: 50%;
+  padding: 30px; /* Add spacing inside */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean look */
+  max-width: none; /* Restrict max width for better layout */
+  margin: 20px auto; /* Center the div */
+  border: 1px solid #ddd; 
+  filter: drop-shadow(0px 0px 12px grey);/* Light border */
+  display: flex; 
+  justify-content: center; /* Centers the inner content horizontally */
+  align-items: center; /* Centers the inner content vertically */
+  flex-direction: column;
+}
+
+
+.contact-form .input-field, 
+.contact-form .dropdown-field, 
+.contact-form .textarea-field {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+.label{
+font-size: 36px;
+}
+
+.contact-form .submit-button {
+background: #275f4d;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+border-radius: 25px;  
+font-size: 18px;
+font-weight: 600;
+border: none;
+transition: 0.3s ease-in-out;
+}
+.form-label {
+font-weight:lighter;
+display: block;
+margin-top: 20px;
+color: #333;
+}
+
+.form-contact{
+font-size: 26px;
+}
+.contact-form .submit-button:hover {
+background: #b6b7b8;
+color: #000000;
 }
