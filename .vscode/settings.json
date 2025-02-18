@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "connectionTimeout": 30,
+            "username": "wajihawaqar1234@gmail.com",
+            "database": "demo",
+            "name": "ecotech",
+            "password": "Glossylips@02"
+        }
+    ]
+}

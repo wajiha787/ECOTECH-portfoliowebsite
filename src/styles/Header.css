@@ -1,0 +1,286 @@
+.sticky-header {
+  background-color: rgba(239, 245, 239, 0.5);
+  padding: 2rem;
+  border-top: 5px solid #5b5858;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 280px;
+  position: relative;
+}
+
+/* Logo */
+.ecologo {
+  width: 60px;
+  height: 60px;
+}
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  margin-block: 1rem;
+}
+.desktop-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Logo Container */
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* ✅ Keeps text aligned properly */
+  position: relative; /* ✅ Prevents unnecessary absolute positioning */
+  top: 2%;
+  left: 5%;
+}
+
+.logo .ECO {
+  color: rgb(76, 106, 25);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .TECH {
+  color: rgb(134, 130, 130);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo .FUSION {
+  color: black;
+  font-size: 24px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.logo .innovations {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  font-size: 18px;
+  color: darkolivegreen;
+}
+
+/* Navigation Menu */
+.home,
+.solutions,
+.clients {
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.home {
+  padding-left: 600px;
+}
+
+/* Contact Us Button */
+.contactus {
+  background: linear-gradient(120deg, rgb(134, 190, 134), rgb(167, 166, 166));
+  color: black;
+  padding: 10px 30px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.aboutus {
+  background: linear-gradient(120deg, rgb(134, 190, 134), rgb(167, 166, 166));
+  color: black;
+  padding: 10px 30px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactus:hover {
+  background-color: grey;
+  color: white;
+}
+.aboutus:hover {
+  background-color: grey;
+  color: white;
+}
+
+/* Hero Section */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.frontpage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.5); /* Makes the image translucent */
+}
+
+#home p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+/* Dropdown Styling */
+.solutions-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 10px 0;
+  z-index: 10;
+}
+
+.dropdown span {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown span:hover {
+  background-color: #0e2f15;
+}
+.dropdown .dropdown-item {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Navigation Links */
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #35463f;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+.nav-link,
+.solutions-container,
+.contactus,
+.aboutus {
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
+}
+/* Hide the navigation links and button on mobile */
+@media (max-width: 1050px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .bar-icon {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.drawer {
+  position: absolute;
+  top: 22%;
+  right: 0;
+  width: 250px;
+  height: 56vh;
+  background: linear-gradient(120deg, rgb(134, 190, 134), rgb(167, 166, 166));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 999;
+}
+
+.drawer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  margin: 5px 0;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.drawer-link:hover {
+  color: green;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}

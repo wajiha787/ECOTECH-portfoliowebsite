@@ -1,0 +1,106 @@
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 40px 10%;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Card Styles */
+.card2 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  border-radius: 15px; /* Soft rounded corners */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.12);
+  perspective: 1000px; /* Enables 3D effect */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Flip Effect */
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden; /* Ensures proper flip */
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Front Side */
+.card2 .front {
+  background: linear-gradient(120deg, #d7ed6c, #7b95c9);
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+/* Back Side */
+.card2 .back {
+  background: linear-gradient(120deg, #7b95c9, #dbf460);
+  font-size: 18px;
+  font-weight: 500;
+  transform: rotateY(180deg);
+}
+
+/* True Flip Effect */
+.card2:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card2:hover .back {
+  transform: rotateY(0deg);
+}
+
+/* Section Title */
+.service {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2d3436;
+  font-weight: 650;
+  position: relative;
+}
+
+.service::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0984e3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .service {
+    font-size: 26px;
+  }
+}

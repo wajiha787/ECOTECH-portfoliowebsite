@@ -1,0 +1,60 @@
+.services-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    gap: 0;
+    
+  }
+  
+  .service-box {
+    width: 45%;
+    height:240px;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+  }
+  
+  .blue-box {
+    background-color: #686868;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  
+  }
+  
+  .green-box {
+    background-color: #adf193;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    margin-left: -5%; /* Adjust overlap to make them interlock */
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+.green-box p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-left: 20px; /* Keep margin smaller for better fit */
+}
+
+.blue-box p {
+    font-size: 1em;
+    line-height: 1.8;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        width: 90%; /* Makes boxes full-width on small screens */
+        margin: 0 auto; /* Centers them */
+    }
+}

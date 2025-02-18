@@ -1,0 +1,22 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-bottom-left {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 6;
+}
