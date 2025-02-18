@@ -1,12 +1,12 @@
 header {
-  background-color: rgba(239, 245, 239, 0.5); /* Light green background */
+  background-color: rgba(239, 245, 239, 0.5); 
   padding: 20px;
   position: relative;
   border-top: 5px solid #5b5858;
-  display: flex;  /* ✅ Ensures elements align properly */
+  display: flex; 
   align-items: center;
-  justify-content: space-between; /* ✅ Keeps items spaced properly */
-  height: 280px;  /* Increased height */
+  justify-content: space-between; 
+  height: 270px;  
 }
   
   /* Logo */
@@ -21,8 +21,8 @@ header {
   .logo {
     display: flex;
     flex-direction: row;
-    align-items: center; /* ✅ Keeps text aligned properly */
-    position: relative; /* ✅ Prevents unnecessary absolute positioning */
+    align-items: center; 
+    position: relative;
     top: 2%; 
     left: 5%;
 }
@@ -102,7 +102,7 @@ header {
     color: white;
   }
   
-  /* Hero Section */
+  
   #home {
     position: relative;
     width: 100%;
@@ -113,7 +113,7 @@ header {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter: brightness(0.5); /* Makes the image translucent */
+    filter: brightness(0.5); 
   }
   
   #home p {
