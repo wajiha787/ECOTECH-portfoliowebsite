@@ -1,5 +1,6 @@
 .footer-container {
-    background: rgba(234, 244, 197, 0.7);
+    border-top: 5px solid rgb(87, 86, 86);
+    background: rgba(218, 247, 207, 0.7);
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +20,7 @@
   
   .footer-company h2 {
     font-weight: bold;
+    font-size: 2rem;
   }
   
   .footer-company p {

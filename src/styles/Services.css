@@ -1,16 +1,28 @@
-/* Services Section */
-.services-container {
-  display: flex;
-  justify-content: center;
-  gap: 35px;
+.services-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center;
+  gap: 40px;
   padding: 40px 10%;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Left Side (Cards) */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+}
+.services-text {
+  max-width: 500px;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Card Styles */
 .card2 {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   background: linear-gradient(135deg, #ffffff, #f8f8f8);
   border-radius: 15px; /* Soft rounded corners */
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.12);
@@ -33,7 +45,7 @@
   height: 100%;
   padding: 20px;
   text-align: center;
-  color: #000000;
+  color: #827e7e;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +56,8 @@
 
 /* Front Side */
 .card2 .front {
-  background: linear-gradient(120deg, #d7ed6c, #7b95c9);
+  background-color: rgb(218, 247, 207, 0.7);
+  color: #827e7e;
   font-size: 22px;
   font-weight: bold;
   border-radius: 15px;
@@ -52,7 +65,8 @@
 
 /* Back Side */
 .card2 .back {
-  background: linear-gradient(120deg, #7b95c9, #dbf460);
+  background-color: rgba(48, 50, 48, 0.7);
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   transform: rotateY(180deg);

@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="footer-links">
           <h3>Company</h3>
           <ul>
-              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/aboutus">About Us</Link></li>
               <li><Link to="/contactus">Contact Us</Link></li>
               <li><Link to="/clients">Clients</Link></li>
               <li><Link to="/">Home</Link></li>
@@ -29,11 +29,12 @@ export default function Footer() {
         <div className="footer-links">
           <h3>Solutions</h3>
           <ul>
-            <li><a href="#">Data Wired and Wireless Solutions</a></li>
-            <li><a href="#">Structured Cabling Solutions</a></li>
-            <li><a href="#">Data Center Solutions</a></li>
-            <li><a href="#">ICT / ELV Solutions</a></li>
-            <li><a href="#">Unified Voice Solution</a></li>
+            <li><Link to="/data-wired-wireless">Data Wired and Wireless Solutions</Link></li>
+            <li><Link to="/structured-cabling">Structured Cabling Solutions</Link></li>
+            <li><Link to="/data-center-solution">Data Center Solutions</Link></li>
+            <li><Link to="/ict-elv-solutions">ICT / ELV </Link></li>
+            <li><Link to="/unified-voice-solution">Unified Voice Solution</Link></li>
+            <li><Link to="/town-planners-and-builders">Town Planners and Builders</Link></li>
           </ul>
         </div>
 

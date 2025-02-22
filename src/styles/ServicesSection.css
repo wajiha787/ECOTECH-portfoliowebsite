@@ -13,12 +13,13 @@
     height:240px;
     padding: 20px;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
+    
     font-family: Arial, sans-serif;
   }
   
   .blue-box {
     background-color: #686868;
+    color: rgb(255, 255, 255);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -26,7 +27,7 @@
   }
   
   .green-box {
-    background-color: #adf193;
+    background-color: #769688;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);

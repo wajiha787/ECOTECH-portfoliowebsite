@@ -9,6 +9,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import ServicesSection from "./ServicesSection";
 import Counter from "./Counter";
 import Footer from "./Footer";
+import ConstructionHome from "./ConstructionHome";
 
 const images = [coverPic1, coverPic2, coverPic3];
 
@@ -44,11 +45,13 @@ const Home = () => {
 
             {/* Wrap Services and WhyChooseUs in a separate div */}
             <div className="home-sections">
-                <ServicesSection/>
                 <Services />
+                <ServicesSection/>
+                
                 
             </div>
             <WhyChooseUs />
+            <ConstructionHome/>
             <Counter/>
             <ClientsHome/>
             <Footer/>
