@@ -12,10 +12,11 @@ import StructuredCabling from "./pages/StructuredCabling";
 import DataCenterSolution from "./pages/DataCenterSolution";
 import ICTELVSolutions from "./pages/ICTELVSolutions";
 import UnifiedVoiceSolution from "./pages/UnifiedVoiceSolution"; 
+import TownplannersandBuilders from './pages/TownplannersandBuilders';
 
 function App() {
   return (
-    <Router basename="/ECOTECH-portfoliowebsite">  {/* 👈 Added basename for GitHub Pages */}
+    <Router basename="/ECOTECH-portfoliowebsite">  
       {/* WhatsApp Floating Button */}
       <div className="fixed-bottom-left">
         <a href="https://wa.me/923362220034?" target="_blank" rel="noopener noreferrer">
@@ -39,6 +40,7 @@ function App() {
           <Route path="/data-center-solution" element={<DataCenterSolution />} />
           <Route path="/ict-elv-solutions" element={<ICTELVSolutions />} />
           <Route path="/unified-voice-solution" element={<UnifiedVoiceSolution />} />
+          <Route path="/town-planners-and-builders" element={<TownplannersandBuilders />} />
         </Routes>
       </div> 
       

@@ -2,7 +2,7 @@ import React from 'react';
 import Client1 from '../images/Client-1.png';
 import Client2 from '../images/Client-2.png';
 import Client3 from '../images/Client-3.png';
-import Client4 from '../images/Client-4.png';
+import Client4 from '../images/Client-4.png'; 
 import Client5 from '../images/Client-5.png';
 import Client6 from '../images/Client-6.png';
 import Client7 from '../images/Client-7.png';
@@ -18,7 +18,7 @@ export default function ClientsHome() {
 
   return (
     <div className="clients-container">
-      <h2 className="clients-heading">Join Our Growing Network</h2> {/* Added heading */}
+      <h2 className="clients-heading">Bringing over 15 years of expertise in ICT infrastructure, applications, and services</h2> {/* Added heading */}
       <div className="clients-strip">
         {/* Repeat images twice for seamless effect */}
         {images.concat(images).map((img, index) => (

@@ -1,8 +1,8 @@
 .clients-container {
   width: 100%;
   overflow: hidden;
-  background: rgba(234, 244, 197, 0.7);
-  border-top: 5px solid grey;
+  border-top: 5px solid rgb(87, 86, 86);
+    background: rgba(218, 247, 207, 0.7);
   padding: 20px 0;
   white-space: nowrap;
   position: relative;
@@ -53,10 +53,9 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: #1f2937; /* Darker shade for better contrast */
   position: relative;
-  text-transform: uppercase; /* Optional: Makes text more prominent */
 }
 
 /* Optional: Add an underline effect */

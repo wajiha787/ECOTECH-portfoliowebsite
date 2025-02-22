@@ -1,11 +1,13 @@
 .counter-container {
     display: flex;
     width: 100vw; 
-    border-top: 5px solid grey;
+    flex-direction: column; 
+    border-top: 5px solid rgb(87, 86, 86);
+    background: rgba(218, 247, 207, 0.7);
     justify-content: center;
     align-items: center;
     min-height: 38vh;
-    background: rgba(234, 244, 197, 0.7);
+    
     color: rgb(3, 3, 3);
     text-align: center;
     padding: 40px 20px;
@@ -34,4 +36,25 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+ 
+  .counter-heading {
+   
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+    color: #262b32; /* Darker shade for better contrast */
+    position: relative;
+  }
   
+  /* Optional: Add an underline effect */
+  .counter-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #0984e3; /* Blue underline for emphasis */
+    border-radius: 2px;
+  }
