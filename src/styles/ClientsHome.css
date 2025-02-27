@@ -1,5 +1,5 @@
 .clients-container {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   border-top: 5px solid rgb(87, 86, 86);
   background: rgba(218, 247, 207, 0.7);

@@ -57,7 +57,7 @@
 /* Front Side */
 .card2 .front {
   background-color: rgb(218, 247, 207, 0.7);
-  color: #827e7e;
+  color: #716f6f;
   font-size: 22px;
   font-weight: bold;
   border-radius: 15px;
@@ -65,7 +65,7 @@
 
 /* Back Side */
 .card2 .back {
-  background-color: rgba(48, 50, 48, 0.7);
+  background-color: rgb(167, 166, 166);
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
