@@ -1,23 +1,32 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Header.css";
+import Drawer from "./Drawer";
 import imglogo from "../images/ecologo.png";
+import { FaBars } from "react-icons/fa";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
   return (
-    <header className="sticky-header">
-      <img className="ecologo" src={imglogo} alt="ECO Tech Fusion Logo" />
-      <div className="logo">
-        <span className="ECO">ECO</span>
-        <span className="TECH">TECH</span>
-        <span className="FUSION">FUSION</span>
-        <span className="innovations">Serving Innovations</span>
+    <header className="sticky-header" style={{ padding: "2rem" }}>
+      <div className="logoWrapper">
+        <img className="ecologo" src={imglogo} alt="ECO Tech Fusion Logo" />
+        <div className="logo">
+          <span className="ECO">ECO</span>
+          <span className="TECH">TECH</span>
+          <span className="FUSION">FUSION</span>
+          <span className="innovations">Serving Innovations</span>
+        </div>
       </div>
-      <nav>
-        <Link to="/" className="nav-link">Home</Link>
-
+      <nav className="desktop-nav">
+        <Link to="/" className="nav-link">
+          Home
+        </Link>
         {/* Dropdown for Solutions */}
         <div 
           className="solutions-container" 
@@ -42,6 +51,15 @@ function Header() {
         <Link to="/aboutus" className="aboutus">About Us</Link>     
         <Link to="/contactus" className="contactus">Contact Us</Link>
       </nav>
+       {/* Mobile Nav - Bar Icon */}
+       <div className="mobile-nav">
+        <button className="bar-icon" onClick={toggleDrawer}>
+          <FaBars /> {/* React Icon for Hamburger */}
+        </button>
+      </div>
+
+      {/* Drawer Component for Mobile */}
+      {isDrawerOpen && <Drawer toggleDrawer={toggleDrawer} />}
     </header>
   );
 }
